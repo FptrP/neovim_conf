@@ -1,6 +1,7 @@
 vim.pack.add({
-  { src = 'https://github.com/neovim/nvim-lspconfig'},
-  { src = 'https://github.com/mason-org/mason.nvim'},
+  { src = 'https://github.com/folke/tokyonight.nvim' },
+  { src = 'https://github.com/neovim/nvim-lspconfig' },
+  { src = 'https://github.com/mason-org/mason.nvim' },
 	{ src = "https://github.com/saghen/blink.cmp", version = "v1", name = "blink.cmp" },
   { src = "https://github.com/nvim-tree/nvim-tree.lua"},
   -- telescope dep
@@ -9,6 +10,9 @@ vim.pack.add({
   { src = 'https://github.com/nvim-telescope/telescope.nvim' }
 })
 
+require("tokyonight").setup({style = "night"})
+
+vim.cmd("colorscheme tokyonight-night")
 
 require("plugins.masoncfg")
 require("plugins.lspcfg")
