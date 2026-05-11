@@ -14,5 +14,5 @@ vim.opt.smarttab = true
 vim.opt.softtabstop = 2
 vim.opt.number = true
 
-
-
+-- system clipboard
+vim.opt.clipboard = 'unnamedplus'
